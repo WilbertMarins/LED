@@ -5,8 +5,3 @@ calc: calc.y calc.l
 
 clean:
 	rm -rf calc
-	rm -f calc.lex.c
-	rm -f calc.tab.c
-	rm -f calc.tab.h 
-
-	
