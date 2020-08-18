@@ -57,11 +57,13 @@ extern int yydebug;
     POWER = 263,
     TRIANGLE = 264,
     CIRCLE = 265,
-    LEFT = 266,
-    RIGHT = 267,
-    END = 268,
-    NEG = 269,
-    PRIMES = 270
+    HELP = 266,
+    EXIT = 267,
+    LEFT = 268,
+    RIGHT = 269,
+    END = 270,
+    NEG = 271,
+    PRIMES = 272
   };
 #endif
 

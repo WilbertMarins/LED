@@ -42,4 +42,14 @@ real {integer}("."{integer})?{exponent}?
 
 "(" return LEFT;
 ")" return RIGHT;
+";\n" return END;
+";" return END;
 "\n" return END;
+
+"help" return HELP;
+"Help" return HELP;
+"HELP" return HELP;
+
+"exit" return EXIT;
+"Exit" return EXIT;
+"EXIT" return EXIT;
