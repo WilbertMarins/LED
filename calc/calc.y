@@ -22,8 +22,8 @@ extern int yylex (void);
 %start Input
 %%
 
-Input: /* empty */{printf("> ");};
-Input: Input Line {printf("> ");};
+Input: /* empty */{printf(">>> ");};
+Input: Input Line {printf(">>> ");};
 
 Line: END
 Line: Expression END { printf("Result: %f\n", $1); }
@@ -89,7 +89,7 @@ int yyerror(char const *s) {
 }
 
 int main() {
-    printf("Bem vindo ao terminal da Calculadora Monstra™\nDigite 'Help' para ver os comandos\nDigite 'Exit' para sair\n");
+    printf("Bem vindo ao terminal da Calculadora Monstra™ (v0.1)\nEsta Calculadora foi desenvolvida pelos alunos da Materia de Linguagens Especificas e de Dominio\ndo curso de Sistemas de Informação - UEA/EST\nSobre a mentoria do Professor Doutor Jucimar da Silva Jr.\nDigite 'Help' para ver os comandos\nDigite 'Exit' para sair\n");
     int ret = yyparse();
     if (ret){
         fprintf(stderr, "%d error found.\n",ret);
