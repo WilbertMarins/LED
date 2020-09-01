@@ -8,7 +8,7 @@
 
 prog(void)                  //prog=marcação de identificação do nosso programa    "void é vazio ou teriamos um arg = argumento/parametro
 {                           //abertura do que estará dentro do programa
-	print: "Hello World!")  //print=imprime o que foi solicitado até encontra o \n ao final da linha
+	print: "Hello World!"  //print=imprime o que foi solicitado até encontra o \n ao final da linha
 }                           //fechamento do que está dentro do programa
 
 
